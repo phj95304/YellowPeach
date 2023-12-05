@@ -50,7 +50,7 @@ The test IoT application system developed to validate the overall operation of Y
 
 
 
-<img src="./images/intro.pdf" alt="YellowPeach" width="400" height="500">
+<img src="./images/intro_page.jpg" alt="YellowPeach" width="400" height="500">
 
 
 
