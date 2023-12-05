@@ -28,7 +28,7 @@ The test IoT application system developed to validate the overall operation of Y
 
 ## Awards and Achievements
 
-**2$^{nd}$ Prize in the 16th Embedded Software Competition, Ministry of Trade, Industry, and Energy**
+**2<sup>nd</sup> Prize in the 16<sup>th</sup> Embedded Software Competition, Ministry of Trade, Industry, and Energy**
 - Date: Dec 2018
 - National-wide Development Competition
 
