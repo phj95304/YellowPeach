@@ -39,10 +39,10 @@ The test IoT application system developed to validate the overall operation of Y
 ## Interviews and Video Links
 - Introduction Video: [Video Link](https://youtu.be/d1gSSu9ziXg)
   
-** Interview for Winners of the 14$^{th}$ Hansung Engineering Contest**
+**Interview for Winners of the 14$^{th}$ Hansung Engineering Contest**
 - MoneyToday (1:17 - 1:57): [YouTube Link](https://www.youtube.com/watch?v=S7IDEu4fIyc)
 
-** Interviews for Winners of the 16$^{th}$ Embedded Software Competition**
+**Interviews for Winners of the 16$^{th}$ Embedded Software Competition**
 - AsiaToday: [AsiaToday Link](http://www.asiatoday.co.kr/view.php?key=20190102010000958)
 - MoneyToday: [MoneyToday Link](http://news.mt.co.kr/mtview.php?no=2019010209507455004)
 - E-Daily: [E-Daily Link](https://m.edaily.co.kr/news/Read?newsId=03109446622354112&mediaCodeNo=257#forward)
@@ -50,7 +50,7 @@ The test IoT application system developed to validate the overall operation of Y
 
 
 
-<img src="./images/Yp.jpg" alt="YellowPeach" width="300" height="300">
+<img src="./images/intro.jpg" alt="YellowPeach" width="400" height="500">
 
 
 
