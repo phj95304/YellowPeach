@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane stylesheets="@../src/application/application.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.SendDialogController">
+   <children>
+      <BorderPane prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #EAEAEA;">
+         <center>
+            <ListView fx:id="dashBoardList" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </center>
+         <top>
+            <Label text="DashBoard File" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+         </top>
+         <bottom>
+            <GridPane prefHeight="47.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <FlowPane alignment="CENTER" columnHalignment="CENTER" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+                     <children>
+                        <JFXButton fx:id="send" alignment="CENTER" buttonType="RAISED" mnemonicParsing="false" onMouseClicked="#handleSend" prefHeight="35.0" style="-fx-background-color: white;" styleClass="menu" text="Send and Close" textFill="#00a421">
+                           <FlowPane.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </FlowPane.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="cancle" alignment="CENTER" buttonType="RAISED" mnemonicParsing="false" onMouseClicked="#handleCancel" prefHeight="35.0" style="-fx-background-color: white;" styleClass="menu" text="Cancel" textFill="#363948">
+                           <FlowPane.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </FlowPane.margin>
+                        </JFXButton>
+                     </children>
+                  </FlowPane>
+                  <JFXButton fx:id="addDashBoard" alignment="CENTER" buttonType="RAISED" mnemonicParsing="false" onMouseClicked="#handleAddDashBoard" prefHeight="35.0" style="-fx-background-color: white;" styleClass="menu" text="Add DashBoard" textFill="#363948" />
+               </children>
+            </GridPane>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

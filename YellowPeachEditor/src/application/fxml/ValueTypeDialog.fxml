@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane stylesheets="@../application.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.ValueTypeDialogController">
+   <children>
+      <BorderPane prefHeight="800.0" prefWidth="800.0">
+         <center>
+            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox alignment="TOP_CENTER" prefHeight="461.0" prefWidth="800.0">
+                     <children>
+                        <Label text="Topic">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Label>
+                        <HBox prefHeight="353.0" prefWidth="800.0">
+                           <children>
+                              <VBox alignment="TOP_CENTER" prefHeight="318.0" prefWidth="385.0">
+                                 <children>
+                                    <Label text="publish">
+                                       <VBox.margin>
+                                          <Insets bottom="3.0" top="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <JFXTreeTableView fx:id="topicTable" prefHeight="308.0" prefWidth="385.0" />
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox alignment="TOP_CENTER" prefHeight="318.0" prefWidth="385.0">
+                                 <children>
+                                    <Label text="Subscribe">
+                                       <VBox.margin>
+                                          <Insets bottom="3.0" top="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <JFXTreeTableView fx:id="ctrTopicTable" prefHeight="308.0" prefWidth="385.0" />
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <HBox prefHeight="407.0" prefWidth="800.0">
+                     <children>
+                        <VBox alignment="TOP_CENTER" prefHeight="290.0" prefWidth="385.0">
+                           <children>
+                              <ImageView fx:id="arr1" fitHeight="13.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../resources/images/arrow2.png" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                              <JFXTreeTableView fx:id="selectedTopicTable" prefHeight="308.0" prefWidth="377.0">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </JFXTreeTableView>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" prefHeight="290.0" prefWidth="385.0">
+                           <children>
+                              <ImageView fx:id="arr2" fitHeight="13.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../resources/images/arrow2.png" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                              <JFXTreeTableView fx:id="selectedCtrTopicTable" prefHeight="308.0" prefWidth="385.0">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </JFXTreeTableView>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </center>
+         <top>
+            <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="100.0" prefWidth="134.0">
+                     <children>
+                        <Label text="Chart Type">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="Chart Name">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="305.0">
+                     <children>
+                        <JFXTextField fx:id="chartType" alignment="CENTER" editable="false" focusColor="#50ace1" maxWidth="1.7976931348623157E308" prefHeight="29.0" prefWidth="610.0" style="-fx-text-fill: black;" unFocusColor="BLACK">
+                           <VBox.margin>
+                              <Insets top="7.0" />
+                           </VBox.margin>
+                        </JFXTextField>
+                        <JFXTextField fx:id="chartName" alignment="CENTER" focusColor="#50ace1" maxWidth="1.7976931348623157E308" prefHeight="29.0" prefWidth="599.0" style="-fx-text-fill: black;" unFocusColor="BLACK">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </JFXTextField>
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </VBox>
+                  <HBox prefHeight="100.0" prefWidth="292.0">
+                     <children>
+                        <Label fx:id="unitLabel" text="Unit">
+                           <HBox.margin>
+                              <Insets left="30.0" top="40.0" />
+                           </HBox.margin>
+                        </Label>
+                        <JFXComboBox fx:id="unitCombo" focusColor="#50ace1" maxWidth="1.7976931348623157E308" prefHeight="29.0" prefWidth="204.0" styleClass=".combo-box" unFocusColor="BLACK">
+                           <HBox.margin>
+                              <Insets left="15.0" top="30.0" />
+                           </HBox.margin>
+                        </JFXComboBox>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </top>
+         <bottom>
+            <HBox alignment="CENTER_LEFT" prefHeight="48.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="48.0" prefWidth="559.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="19.0" prefWidth="107.0" text="Topic Search">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <JFXTextField fx:id="searchTextField" focusColor="#50ace1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="48.0" prefWidth="278.0" style="-fx-text-fill: black;" unFocusColor="BLACK">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="7.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </JFXTextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="48.0" prefWidth="226.0">
+                     <children>
+                        <JFXButton fx:id="apply" buttonType="RAISED" onMouseClicked="#handleApply" style="-fx-background-color: white;" text="Apply and Close" textFill="#00a421">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="cancle" buttonType="RAISED" onMouseClicked="#handleCancel" style="-fx-background-color: white;" text="Cancel">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

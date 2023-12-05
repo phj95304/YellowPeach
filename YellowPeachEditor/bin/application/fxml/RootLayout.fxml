@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="rootPane" prefHeight="780.0" prefWidth="1000.0" stylesheets="@../application.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.RootLayoutController">
+   <top>
+      <ToolBar prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+        <items>
+          <Button mnemonicParsing="false" onAction="#handleNew" styleClass="toolBtn" text="New" />
+            <Button mnemonicParsing="false" onAction="#handleOpen" styleClass="toolBtn" text="Open" />
+            <Button mnemonicParsing="false" onAction="#handleSend" styleClass="toolBtn" text="Upload" />
+            <Button mnemonicParsing="false" onAction="#handleLoad" styleClass="toolBtn" text="Load" />
+            <Button mnemonicParsing="false" onAction="#handleSave" styleClass="toolBtn" text="Save" />
+            <Button mnemonicParsing="false" onAction="#handleSaveAs" styleClass="toolBtn" text="Save As" />
+            <Button mnemonicParsing="false" onAction="#handleDatabase" styleClass="toolBtn" text="Connection" />
+            <Button mnemonicParsing="false" onAction="#handleEmulator" styleClass="toolBtn" text="Emulator" />
+        </items>
+      </ToolBar>
+   </top>
+</BorderPane>

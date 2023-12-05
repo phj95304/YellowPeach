@@ -1,0 +1,103 @@
+	.row {
+		position: relative;
+	}
+	#size0 {
+		position: relative;
+		width: 340px;
+		height: 30px;
+		background-color: white;
+		border-top-left-radius: 0.25rem;
+		border-top-right-radius:0.25rem;
+		text-align: center;
+		padding-top: 7px;
+	}
+	#size {
+		position: relative;
+		width: 340px;
+		height: 200px;
+		background-color: white;
+		border-bottom-left-radius: 0.25rem;
+		border-bottom-right-radius: 0.25rem;
+	}
+	.camera {
+		position: relative;
+		width: 340px;
+		height: 170px;
+		background-color: white;
+	}
+	.camera_button {
+		width: 340px;
+		height: 30px;
+		background-color: pink;
+	}
+	.value_button {
+		width: 165px;
+		height: 30px;
+		border-radius: 0.25rem;
+		background-color: pink;
+	}
+	#value_btnLabel {
+		position: relative;
+		width: 165px;
+		height: 200px;
+		background-color: white;
+		border-bottom-left-radius: 0.25rem;
+		border-bottom-right-radius: 0.25rem;		
+	}
+	#value0 {
+		position: relative;
+		border-top-left-radius: 0.25rem;
+		border-top-right-radius:0.25rem;
+		text-align: center;
+		padding-top: 7px;
+		width: 165px;
+		height: 30px;
+		background-color: white;
+	}
+	#value {
+		position: relative;
+		background-color: white;
+		border-bottom-left-radius: 0.20rem;
+		border-bottom-right-radius: 0.20rem;		
+		width: 165px;
+		height: 200px;
+		background-color: white;
+	}
+	#b {
+		background-color: white;
+		width: 150px;
+		height: 30px;
+		text-align: center;
+		font-weight: strong;
+		font-size: 17px;
+		border-radius: 0.25rem;
+	}
+	#btn {
+		position: relative;
+		width: 340px;
+		height: 20px;
+		background-color: white;
+		text-align: right;
+		padding-right: 7px;
+	}
+	
+	#label_zoom {
+		position: relative;
+		width: 165px;
+		height: 20px;
+		background-color: white;
+		text-align: right;
+		padding-right: 7px;	
+	}
+	
+	#text {
+		margin-left: 10px;
+	}
+	.button {
+		width: 40px;
+		height: 30px;
+	}
+	.plus {
+		width: 172px;
+	}
+	

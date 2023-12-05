@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" stylesheets="@../application.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.BoardLayoutController">
+   <children>
+      <BorderPane fx:id="borderPane">
+         <center>
+            <TabPane fx:id="tabPane" prefHeight="700.0" prefWidth="450.0" style="-fx-background-color: white;" tabClosingPolicy="ALL_TABS" BorderPane.alignment="CENTER" />
+         </center>
+         <left>
+            <FlowPane fx:id="menuRootPane" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1200.0" prefWidth="200.0" rowValignment="TOP" BorderPane.alignment="CENTER">
+               <children>
+                  <ScrollPane fx:id="menuScrollPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="200.0">
+                     <content>
+                        <FlowPane fx:id="menuFlowPane" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="200.0">
+                           <children>
+                              <HBox fx:id="menuLabelBox" alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="33.0" style="-fx-background-color: #7f2412;">
+                                 <children>
+                                    <Label alignment="CENTER" prefWidth="161.0" text="Menu" textFill="WHITE">
+                                       <font>
+                                          <Font name="Bell MT" size="21.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <VBox id="vBox" fx:id="vBox" alignment="TOP_CENTER" maxWidth="-Infinity" prefWidth="200.0" style="-fx-background-color: #22364e;" styleClass="vBox">
+                                 <children>
+                                    <VBox id="firstSubVBox" fx:id="firstSubVBox" alignment="CENTER" minHeight="-Infinity" styleClass="vBox">
+                                       <children>
+                                          <FlowPane fx:id="firstMenu" alignment="CENTER">
+                                             <children>
+                                                <VBox alignment="CENTER">
+                                                   <children>
+                                                      <ImageView fx:id="chartIV" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="file:/C:/workspace/project_workspace/DashboardEditor-1.0/resources/images/chart.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                      <Label text="CHART TYPE" textFill="WHITE">
+                                                         <font>
+                                                            <Font name="Arial" size="15.0" />
+                                                         </font>
+                                                         <VBox.margin>
+                                                            <Insets bottom="5.0" top="7.0" />
+                                                         </VBox.margin>
+                                                      </Label>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </FlowPane>
+                                          <VBox fx:id="firstSubMenuList" alignment="CENTER" spacing="5.0" style="-fx-background-color: white;" styleClass="subVBox">
+                                             <children>
+                                                <FlowPane alignment="CENTER" style="-fx-background-color: #22364e;">
+                                                   <children>
+                                                      <BorderPane fx:id="menuBorder1" style="-fx-background-color: white;">
+                                                         <center>
+                                                            <ImageView id="bar" fx:id="barIV" fitHeight="48.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                                               <viewport>
+                                                                  <Rectangle2D />
+                                                               </viewport>
+                                                               <image>
+                                                                  <Image url="file:/C:/workspace/project_workspace/DashboardEditor-1.0/resources/images/Bar.png" />
+                                                               </image>
+                                                            </ImageView>
+                                                         </center>
+                                                         <bottom>
+                                                            <Label text="Bar Chart" BorderPane.alignment="CENTER">
+                                                               <font>
+                                                                  <Font name="Arial" size="11.0" />
+                                                               </font>
+                                                            </Label>
+                                                         </bottom>
+                                                         <FlowPane.margin>
+                                                            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                         </FlowPane.margin>
+                                                      </BorderPane>
+                                                      
+                                                      <!-- 
+                                                      <BorderPane style="-fx-background-color: white;">
+                                                         <center>
+                                                            <ImageView id="histogram" fx:id="histogramIV" fitHeight="39.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                                               <image>
+                                                                  <Image url="file:/C:/workspace/project_workspace/DashboardEditor-1.0/resources/images/Histogram.PNG" />
+                                                               </image>
+                                                            </ImageView>
+                                                         </center>
+                                                         <bottom>
+                                                            <Label text="Histogram" BorderPane.alignment="CENTER">
+                                                               <font>
+                                                                  <Font name="Arial" size="13.0" />
+                                                               </font>
+                                                            </Label>
+                                                         </bottom>
+                                                         <FlowPane.margin>
+                                                            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                         </FlowPane.margin>
+                                                      </BorderPane>
+                                                       -->
+                                                      
+                                                      <BorderPane fx:id="menuBorder2" style="-fx-background-color: white;">
+                                                         <center>
+                                                            <ImageView id="line" fx:id="lineIV" fitHeight="44.0" fitWidth="143.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                                               <image>
+                                                                  <Image url="file:/C:/workspace/project_workspace/DashboardEditor-1.0/resources/images/Line.png" />
+                                                               </image>
+                                                            </ImageView>
+                                                         </center>
+                                                         <bottom>
+                                                            <Label text="Line Chart" BorderPane.alignment="CENTER">
+                                                               <font>
+                                                                  <Font name="Arial" size="11.0" />
+                                                               </font>
+                                                            </Label>
+                                                         </bottom>
+                                                         <FlowPane.margin>
+                                                            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                         </FlowPane.margin>
+                                                      </BorderPane>
+                                                      <BorderPane fx:id="menuBorder3" style="-fx-background-color: white;">
+                                                         <center>
+                                                            <ImageView id="gauge" fx:id="gaugeIV" fitHeight="40.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                                               <image>
+                                                                  <Image url="file:/C:/workspace/project_workspace/DashboardEditor-1.0/resources/images/Gauge.PNG" />
+                                                               </image>
+                                                            </ImageView>
+                                                         </center>
+                                                         <bottom>
+                                                            <Label text="Gauge Chart" BorderPane.alignment="CENTER">
+                                                               <font>
+                                                                  <Font name="Arial" size="11.0" />
+                                                               </font>
+                                                            </Label>
+                                                         </bottom>
+                                                         <FlowPane.margin>
+                                                            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                         </FlowPane.margin>
+                                                      </BorderPane>
+                                                      <BorderPane fx:id="menuBorder4" style="-fx-background-color: white;">
+                                                         <center>
+                                                            <ImageView id="doughnut" fx:id="doughnutIV" fitHeight="37.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                                               <image>
+                                                                  <Image url="file:/C:/workspace/project_workspace/DashboardEditor-1.0/resources/images/Doughnut.PNG" />
+                                                               </image>
+                                                            </ImageView>
+                                                         </center>
+                                                         <bottom>
+                                                            <Label text="Doughnut Chart" BorderPane.alignment="CENTER">
+                                                               <font>
+                                                                  <Font name="Arial" size="11.0" />
+                                                               </font>
+                                                            </Label>
+                                                         </bottom>
+                                                         <FlowPane.margin>
+                                                            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                         </FlowPane.margin>
+                                                      </BorderPane>
+                                                      <BorderPane fx:id="menuBorder5" style="-fx-background-color: white;">
+                                                         <center>
+                                                            <ImageView id="pie" fx:id="pieIV" fitHeight="46.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                                               <image>
+                                                                  <Image url="file:/C:/workspace/project_workspace/DashboardEditor-1.0/resources/images/Pie.PNG" />
+                                                               </image>
+                                                            </ImageView>
+                                                         </center>
+                                                         <bottom>
+                                                            <Label text="Pie Chart" BorderPane.alignment="CENTER">
+                                                               <font>
+                                                                  <Font name="Arial" size="11.0" />
+                                                               </font>
+                                                            </Label>
+                                                         </bottom>
+                                                         <FlowPane.margin>
+                                                            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                         </FlowPane.margin>
+                                                      </BorderPane>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets top="10.0" />
+                                                   </padding>
+                                                </FlowPane>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                          </VBox>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </VBox.margin>
+                                    </VBox>
+                                    <VBox id="thirdSubVBox" fx:id="secondSubVBox" alignment="CENTER" minHeight="-Infinity" styleClass="vBox">
+                                       <children>
+                                          <FlowPane fx:id="secondMenu" alignment="CENTER">
+                                             <children>
+                                                <VBox alignment="CENTER">
+                                                   <children>
+                                                      <ImageView fx:id="widgetIV" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="file:/C:/workspace/project_workspace/DashboardEditor-1.0/resources/images/widget.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                      <Label text="LABEL TYPE" textFill="WHITE">
+                                                         <font>
+                                                            <Font name="Arial" size="15.0" />
+                                                         </font>
+                                                         <VBox.margin>
+                                                            <Insets bottom="5.0" top="7.0" />
+                                                         </VBox.margin>
+                                                      </Label>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </FlowPane>
+                                          <VBox fx:id="secondSubMenuList" alignment="CENTER" styleClass="subVBox">
+                                             <children>
+                                                <FlowPane alignment="CENTER" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #22364e;">
+                                                   <children>
+                                                      <BorderPane fx:id="menuBorder6" style="-fx-background-color: white;">
+                                                         <center>
+                                                            <ImageView id="value" fx:id="valueIV" fitHeight="46.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                                               <image>
+                                                                  <Image url="file:/C:/workspace/project_workspace/DashboardEditor-1.0/resources/images/Value.png" />
+                                                               </image>
+                                                            </ImageView>
+                                                         </center>
+                                                         <bottom>
+                                                            <Label text="Value" BorderPane.alignment="CENTER">
+                                                               <font>
+                                                                  <Font name="Arial" size="11.0" />
+                                                               </font></Label>
+                                                         </bottom>
+                                                         <FlowPane.margin>
+                                                            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                         </FlowPane.margin>
+                                                      </BorderPane>
+                                                      <BorderPane fx:id="menuBorder7" style="-fx-background-color: white;">
+                                                         <center>
+                                                            <ImageView id="image" fx:id="imageIV" fitHeight="70.0" fitWidth="79.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                                               <image>
+                                                                  <Image url="file:/C:/workspace/project_workspace/DashboardEditor-1.0/resources/images/peach.png" />
+                                                               </image>
+                                                            </ImageView>
+                                                         </center>
+                                                         <bottom>
+                                                            <Label text="Image" BorderPane.alignment="CENTER">
+                                                               <font>
+                                                                  <Font name="Arial" size="11.0" />
+                                                               </font></Label>
+                                                         </bottom>
+                                                         <FlowPane.margin>
+                                                            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                         </FlowPane.margin>
+                                                      </BorderPane>
+                                                      <BorderPane fx:id="menuBorder8" style="-fx-background-color: white;">
+                                                         <center>
+                                                            <ImageView id="text" fx:id="textIV" fitHeight="68.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                                               <image>
+                                                                  <Image url="file:/C:/workspace/project_workspace/DashboardEditor-1.0/resources/images/text.PNG" />
+                                                               </image>
+                                                            </ImageView>
+                                                         </center>
+                                                         <bottom>
+                                                            <Label text="Text" BorderPane.alignment="CENTER">
+                                                               <font>
+                                                                  <Font name="Arial" size="11.0" />
+                                                               </font></Label>
+                                                         </bottom>
+                                                         <FlowPane.margin>
+                                                            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                         </FlowPane.margin>
+                                                      </BorderPane>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets top="10.0" />
+                                                   </padding>
+                                                </FlowPane>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </VBox>
+                                    <VBox id="fourthSubVBox" fx:id="thirdSubVBox" alignment="CENTER" minHeight="-Infinity" styleClass="vBox">
+                                       <children>
+                                          <FlowPane fx:id="thirdMenu" alignment="CENTER">
+                                             <children>
+                                                <VBox alignment="CENTER">
+                                                   <children>
+                                                      <ImageView fx:id="mediaIV" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="file:/C:/workspace/project_workspace/DashboardEditor-1.0/resources/images/media.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                      <Label text="MEDIA TYPE" textFill="WHITE">
+                                                         <font>
+                                                            <Font name="Arial" size="15.0" />
+                                                         </font>
+                                                         <VBox.margin>
+                                                            <Insets bottom="5.0" top="7.0" />
+                                                         </VBox.margin>
+                                                      </Label>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </FlowPane>
+                                          <VBox fx:id="thirdSubMenuList" alignment="CENTER" styleClass="subVBox">
+                                             <children>
+                                                <FlowPane alignment="CENTER" style="-fx-background-color: #22364e;">
+                                                   <children>
+                                                      <BorderPane fx:id="menuBorder9" style="-fx-background-color: white;">
+                                                         <center>
+                                                            <ImageView id="video" fx:id="videoIV" fitHeight="53.0" fitWidth="122.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                                               <image>
+                                                                  <Image url="file:/C:/workspace/project_workspace/DashboardEditor-1.0/resources/images/streamming.png" />
+                                                               </image>
+                                                            </ImageView>
+                                                         </center>
+                                                         <bottom>
+                                                            <Label text="Video" BorderPane.alignment="CENTER">
+                                                               <font>
+                                                                  <Font name="Arial" size="11.0" />
+                                                               </font></Label>
+                                                         </bottom>
+                                                         <FlowPane.margin>
+                                                            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                         </FlowPane.margin>
+                                                      </BorderPane>
+                                                      <BorderPane fx:id="menuBorder10" style="-fx-background-color: #22364e;">
+                                                         <center>
+                                                            <ImageView id="camera" fx:id="cameraIV" fitHeight="67.0" fitWidth="143.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                                               <image>
+                                                                  <Image url="file:/C:/workspace/project_workspace/DashboardEditor-1.0/resources/images/Swiss.jpg" />
+                                                               </image>
+                                                            </ImageView>
+                                                         </center>
+                                                         <FlowPane.margin>
+                                                            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                         </FlowPane.margin>
+                                                         <bottom>
+                                                            <HBox alignment="CENTER" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+                                                               <children>
+                                                                  <Label text="Camera">
+                                                                     <font>
+                                                                        <Font name="Arial" size="11.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                               </children>
+                                                            </HBox>
+                                                         </bottom>
+                                                      </BorderPane>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets top="10.0" />
+                                                   </padding>
+                                                   <VBox.margin>
+                                                      <Insets bottom="10.0" />
+                                                   </VBox.margin>
+                                                </FlowPane>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </VBox>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </FlowPane>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </FlowPane>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>

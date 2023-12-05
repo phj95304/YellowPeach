@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="ViewerFinal">
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <wb-resource deploy-path="/" source-path="/libs"/>
+        <wb-resource deploy-path="/" source-path="/WebContent/WEB-INF/lib"/>
+        <wb-resource deploy-path="/" source-path="/WebContent"/>
+        <property name="java-output-path" value="/ViewerFinal/build/classes"/>
+        <property name="context-root" value="ViewerFinal"/>
+    </wb-module>
+</project-modules>

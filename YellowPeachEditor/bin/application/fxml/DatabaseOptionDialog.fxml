@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane stylesheets="@../application.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.DatabaseOptionDialogController">
+   <children>
+      <BorderPane prefHeight="600.0" prefWidth="700.0">
+         <center>
+            <TabPane fx:id="tabPane" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+              <tabs>
+                <Tab id="databaseTab" fx:id="databaseTab" text="Database Setting">
+                     <content>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <VBox alignment="CENTER_LEFT" prefHeight="67.0" prefWidth="700.0" style="-fx-border-color: white white #22364e white;">
+                                 <children>
+                                    <Label text="Database Setting" textFill="#22364e">
+                                       <font>
+                                          <Font name="Georgia" size="24.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets left="3.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <HBox prefHeight="184.0" prefWidth="700.0">
+                                 <children>
+                                    <VBox alignment="TOP_CENTER" prefHeight="449.0" prefWidth="169.0">
+                                       <children>
+                                          <Label text="Database URL" textFill="#030066">
+                                             <VBox.margin>
+                                                <Insets bottom="20.0" top="5.0" />
+                                             </VBox.margin>
+                                             <font>
+                                                <Font name="Georgia" size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Database User" textFill="#030066">
+                                             <VBox.margin>
+                                                <Insets bottom="20.0" top="13.0" />
+                                             </VBox.margin>
+                                             <font>
+                                                <Font name="Georgia" size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Database Password" textFill="#030066">
+                                             <font>
+                                                <Font name="Georgia" size="14.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets top="13.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                       </children>
+                                       <padding>
+                                          <Insets top="20.0" />
+                                       </padding>
+                                    </VBox>
+                                    <VBox prefHeight="449.0" prefWidth="433.0">
+                                       <children>
+                                          <TextField fx:id="urlTextField">
+                                             <VBox.margin>
+                                                <Insets bottom="20.0" />
+                                             </VBox.margin>
+                                          </TextField>
+                                          <TextField fx:id="userTextField">
+                                             <VBox.margin>
+                                                <Insets bottom="20.0" />
+                                             </VBox.margin>
+                                          </TextField>
+                                          <TextField fx:id="passwordTextField" />
+                                       </children>
+                                       <padding>
+                                          <Insets left="20.0" top="20.0" />
+                                       </padding>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <VBox alignment="CENTER_LEFT" prefHeight="67.0" prefWidth="700.0" style="-fx-border-color: white white #22364e white;">
+                                 <children>
+                                    <Label text="MQTT Broker Setting" textFill="#22364e">
+                                       <font>
+                                          <Font name="Georgia" size="24.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets left="3.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <HBox prefHeight="192.0" prefWidth="700.0">
+                                 <children>
+                                    <VBox alignment="TOP_CENTER" prefHeight="192.0" prefWidth="202.0">
+                                       <children>
+                                          <Label text="MQTT Broker Host" textFill="#030066">
+                                             <font>
+                                                <Font name="Georgia" size="14.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets bottom="20.0" top="5.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label text="Client ID" textFill="#030066">
+                                             <font>
+                                                <Font name="Georgia" size="14.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets top="13.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                       </children>
+                                       <padding>
+                                          <Insets top="20.0" />
+                                       </padding>
+                                    </VBox>
+                                    <VBox prefHeight="192.0" prefWidth="404.0">
+                                       <children>
+                                          <TextField fx:id="hostTF">
+                                             <VBox.margin>
+                                                <Insets bottom="20.0" />
+                                             </VBox.margin>
+                                          </TextField>
+                                          <TextField fx:id="clientIdTf" />
+                                       </children>
+                                       <padding>
+                                          <Insets top="20.0" />
+                                       </padding>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </content>
+                  </Tab>
+                  <Tab id="topicCollectorTab" fx:id="topicCollectorTab" text="Topic Collector">
+                     <content>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <VBox alignment="CENTER_LEFT" prefHeight="68.0" prefWidth="700.0" style="-fx-border-color: white white #22364e white;">
+                                 <children>
+                                    <Label text="Topic Collector" textFill="#22364e">
+                                       <font>
+                                          <Font name="Georgia" size="24.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets left="3.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <HBox prefHeight="437.0" prefWidth="700.0">
+                                 <children>
+                                    <VBox alignment="CENTER" prefHeight="519.0" prefWidth="364.0">
+                                       <children>
+                                          <Label text="Select System" textFill="#22364e">
+                                             <VBox.margin>
+                                                <Insets top="10.0" />
+                                             </VBox.margin>
+                                             <font>
+                                                <Font name="Georgia" size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <ListView fx:id="systemListView" prefHeight="149.0" prefWidth="335.0">
+                                             <VBox.margin>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </VBox.margin>
+                                          </ListView>
+                                          <HBox alignment="CENTER">
+                                             <children>
+                                                <JFXButton fx:id="addBt" buttonType="RAISED" onAction="#handleAdd" styleClass="emBtn" text="Add" textFill="#22364e" />
+                                                <JFXButton fx:id="removeBt" buttonType="RAISED" onAction="#handleRemove" styleClass="emBtn" text="Remove" textFill="#22364e">
+                                                   <HBox.margin>
+                                                      <Insets left="15.0" />
+                                                   </HBox.margin>
+                                                </JFXButton>
+                                             </children>
+                                          </HBox>
+                                          <ListView fx:id="selectedListView" prefHeight="156.0" prefWidth="308.0">
+                                             <VBox.margin>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </VBox.margin>
+                                          </ListView>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="TOP_CENTER" prefHeight="519.0" prefWidth="338.0">
+                                       <children>
+                                          <JFXButton fx:id="startBt" buttonType="RAISED" onAction="#handleStart" style="-fx-font-size: 35;" styleClass="emBtn" text="Start" textFill="#22364e">
+                                             <VBox.margin>
+                                                <Insets top="80.0" />
+                                             </VBox.margin>
+                                          </JFXButton>
+                                          <Label fx:id="currentSystemLabel">
+                                             <font>
+                                                <Font name="Georgia" size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <FlowPane alignment="BOTTOM_CENTER" prefHeight="254.0" prefWidth="337.0">
+                                             <children>
+                                                <Label text="Log" textFill="#22364e">
+                                                   <font>
+                                                      <Font name="Georgia" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextArea fx:id="logTextArea" prefHeight="201.0" prefWidth="313.0">
+                                                   <FlowPane.margin>
+                                                      <Insets bottom="17.0" />
+                                                   </FlowPane.margin>
+                                                </TextArea>
+                                             </children>
+                                          </FlowPane>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+         </center>
+         <bottom>
+            <FlowPane alignment="CENTER_RIGHT" prefHeight="46.0" prefWidth="700.0" style="-fx-background-color: white; -fx-border-color: #363948 white white white;" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXButton fx:id="apply" buttonType="RAISED" onAction="#handleApply" styleClass="emBtn" text="Apply and Close">
+                     <FlowPane.margin>
+                        <Insets right="10.0" />
+                     </FlowPane.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="cancel" buttonType="RAISED" onAction="#handleCancel" styleClass="emBtn" text="Cancel" />
+               </children>
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </FlowPane>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

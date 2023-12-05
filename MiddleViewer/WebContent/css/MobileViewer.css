@@ -1,0 +1,68 @@
+	.row {
+		position: relative;
+	}
+	#size0 {
+		position: relative;
+		width: 340px;
+		height: 30px;
+		background-color: white;
+		border-top-left-radius: 0.25rem;
+		border-top-right-radius:0.25rem;
+		text-align: center;
+		padding-top: 7px;
+		margin:0 auto;
+	}
+	#size {
+		position: relative;
+		width: 340px;
+		height: 340px;
+		background-color: white;
+		border-bottom-left-radius: 0.25rem;
+		border-bottom-right-radius: 0.25rem;
+		margin:0 auto;
+	}
+	.camera {
+		position: relative;
+		width: 340px;
+		height: 300px;
+		background-color: white;
+		margin:0 auto;
+	}
+	.camera_button {
+		width: 340px;
+		height: 30px;
+		background-color: pink;
+		margin:0 auto;
+		border-radius: 0.25rem;
+	}
+
+	#b {
+		background-color: white;
+		width: 150px;
+		height: 30px;
+		text-align: center;
+		font-weight: strong;
+		font-size: 17px;
+		border-radius: 0.25rem;
+	}
+	#btn {
+		position: relative;
+		width: 340px;
+		height: 20px;
+		background-color: white;
+		text-align: right;
+		padding-right: 7px;
+		margin:0 auto;
+	}
+	
+	#text {
+		margin-left: 15px;
+	}
+	.button {
+		width: 40px;
+		height: 30px;
+	}
+	.plus {
+		width: 172px;
+	}
+	

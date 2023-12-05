@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.BoardLayoutController">
+   <children>
+      <BorderPane fx:id="borderPane">
+         <center>
+            <TabPane fx:id="tabPane" prefHeight="700.0" prefWidth="450.0" style="-fx-background-color: #363948;" tabClosingPolicy="ALL_TABS" BorderPane.alignment="CENTER" />
+         </center>
+         <left>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <bottom>
+                  <VBox alignment="CENTER" minHeight="75.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+                     <children>
+                        <Separator prefWidth="200.0" />
+                        <Label text="Copyright © 2018" textFill="#9a9a9a">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="Yellow Peach" textFill="#f89090">
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+               </bottom>
+               <center>
+                  <AnchorPane fx:id="menuRootPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+                     <children>
+                        <VBox id="vBox" fx:id="vBox" alignment="CENTER" prefHeight="648.0" prefWidth="200.0" styleClass="vBox" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <VBox id="firstSubVBox" fx:id="firstSubVBox" alignment="CENTER" minHeight="-Infinity" styleClass="vBox">
+                                 <children>
+                                    <JFXButton id="jfxbutton" fx:id="firstMenu" buttonType="RAISED" maxWidth="1.7976931348623157E308" prefHeight="50.0" style="-fx-background-color: white;" styleClass="menu" text="Chart" textFill="#363948" />
+                                    <VBox fx:id="firstSubMenuList" alignment="CENTER" spacing="5.0" styleClass="subVBox">
+                                       <children>
+                                          <ImageView id="histogram" fx:id="histogramIV" fitHeight="100.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../img/chart1.jpeg" />
+                                             </image>
+                                             <viewport>
+                                                <Rectangle2D />
+                                             </viewport>
+                                             <VBox.margin>
+                                                <Insets top="10.0" />
+                                             </VBox.margin>
+                                          </ImageView>
+                                          <ImageView id="line" fx:id="lineIV" fitHeight="100.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../img/chart1.png" />
+                                             </image>
+                                             <VBox.margin>
+                                                <Insets top="10.0" />
+                                             </VBox.margin>
+                                          </ImageView>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                    </VBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </VBox>
+                              <VBox id="thirdSubVBox" fx:id="secondSubVBox" alignment="CENTER" minHeight="-Infinity" styleClass="vBox">
+                                 <children>
+                                    <JFXButton id="jfxbutton" fx:id="secondMenu" alignment="CENTER" buttonType="RAISED" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="50.0" style="-fx-background-color: white;" styleClass="menu" text="Video" textFill="#363948" />
+                                    <VBox fx:id="secondSubMenuList" alignment="CENTER" styleClass="subVBox">
+                                       <children>
+                                          <ImageView id="video" fx:id="videoIV" fitHeight="100.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../img/streamming.png" />
+                                             </image>
+                                             <VBox.margin>
+                                                <Insets top="10.0" />
+                                             </VBox.margin>
+                                          </ImageView>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </VBox>
+                              <VBox id="fourthSubVBox" fx:id="thirdSubVBox" alignment="CENTER" minHeight="-Infinity" styleClass="vBox">
+                                 <children>
+                                    <JFXButton fx:id="thirdMenu" alignment="CENTER" buttonType="RAISED" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="50.0" style="-fx-background-color: white;" styleClass="menu" text="Camera" textFill="#363948" />
+                                    <VBox fx:id="thirdSubMenuList" alignment="CENTER" styleClass="subVBox">
+                                       <children>
+                                          <ImageView id="camera" fx:id="cameraIV" fitHeight="77.0" fitWidth="136.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../img/image.png" />
+                                             </image>
+                                             <VBox.margin>
+                                                <Insets top="10.0" />
+                                             </VBox.margin>
+                                          </ImageView>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </VBox>
+                              <VBox id="thirdSubVBox" fx:id="fourthSubVBox" alignment="CENTER" minHeight="-Infinity" styleClass="vBox">
+                                 <children>
+                                    <JFXButton id="jfxbutton" fx:id="fourthMenu" alignment="CENTER" buttonType="RAISED" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="50.0" style="-fx-background-color: white;" styleClass="menu" text="Value" textFill="#363948" />
+                                    <VBox fx:id="fourthSubMenuList" alignment="CENTER" styleClass="subVBox">
+                                       <children>
+                                          <ImageView id="value" fx:id="valueIV" fitHeight="91.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../img/tem.png" />
+                                             </image>
+                                             <VBox.margin>
+                                                <Insets top="10.0" />
+                                             </VBox.margin>
+                                          </ImageView>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>
