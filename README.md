@@ -32,7 +32,7 @@ The test IoT application system developed to validate the overall operation of Y
 - Date: Dec 2018
 - National-wide Development Competition
 
-**Gold Prize in the 14th Hansung Engineering Competition, Hansung University**
+**Gold Prize in the 14<sup>th</sup> Hansung Engineering Competition, Hansung University**
 - Date: Oct 2018
 
 
